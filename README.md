@@ -1,6 +1,6 @@
 ## How to run?
 Before starting using docker in this project go to the root of this project. All paths of scripts are related to the root of project
-There are several scripts to manage project on UNIX
+
 
 |                             Description                        | UNIX                                      | 
 |----------------------------------------------------------------|:-----------------------------------------:|
