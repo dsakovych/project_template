@@ -11,4 +11,4 @@ __pycache__/
 python-app/.idea/
 
 # Logs
-var/log/
+python-app/var/log/
