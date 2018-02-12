@@ -18,13 +18,17 @@ class Config:
     # DB settings
     DB_USER = 'root'
     DB_PASS = 'root'
-    DB_HOST = 'localhost'
+    DB_HOST = '0.0.0.0'
     DB_PORT = 3306  # MySQL
     DB_NAME = 'test_db'
 
     # sqlalchemy settings
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     SQLALCHEMY_DATABASE_URI = f"mysql+pymysql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+
+    # ELK settings
+    LOGSTASH_HOST = 'localhost'
+    LOGSTASH_PORT = 5044
 
 
 class ProductionConfig(Config):

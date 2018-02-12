@@ -1,0 +1,6 @@
+Flask
+sqlalchemy
+python-logstash
+flask_sqlalchemy
+mysqlclient
+pandas

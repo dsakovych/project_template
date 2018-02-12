@@ -1,5 +1,4 @@
 import pandas as pd
-
 from app import db_engine as engine
 from app.models import demo_table
 from sqlalchemy.sql import select
