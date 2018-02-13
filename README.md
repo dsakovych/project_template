@@ -6,7 +6,8 @@ Before starting using docker in this project go to the root of this project. All
 |----------------------------------------------------------------|:-----------------------------------------:|
 | Start 'elk'                                                    | ./etc/bin/elk/start.sh                    |
 | Start 'mysql'                                                  | ./etc/bin/mysql/start.sh                  |
-| Down and build all containers                                  | ./etc/bin/reset.sh                        |
-| Start all containers                                           | ./etc/bin/start.sh                        |
-| Stop all containers                                            | ./etc/bin/stop.sh                         |
-| Remove all containers                                          | ./etc/bin/remove.sh                       |
+| Start 'rabbitmq'                                               | ./etc/bin/rabbitmq/start.sh               |
+| Down and build all containers                                  | ./etc/bin/reset-all.sh                    |
+| Start all containers                                           | ./etc/bin/start-all.sh                    |
+| Stop all containers                                            | ./etc/bin/stop-all.sh                     |
+| Remove all containers                                          | ./etc/bin/remove-all.sh                   |

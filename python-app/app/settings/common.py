@@ -18,7 +18,7 @@ class Config:
     # DB settings
     DB_USER = 'root'
     DB_PASS = 'root'
-    DB_HOST = '0.0.0.0'
+    DB_HOST = '127.0.0.1'
     DB_PORT = 3306  # MySQL
     DB_NAME = 'test_db'
 
@@ -27,17 +27,29 @@ class Config:
     SQLALCHEMY_DATABASE_URI = f"mysql+pymysql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
     # ELK settings
-    LOGSTASH_HOST = 'localhost'
+    LOGSTASH_HOST = '127.0.0.1'
     LOGSTASH_PORT = 5044
 
 
-class ProductionConfig(Config):
-    CONFIG_NAME = 'production'
+class DockerConfig(Config):
+    CONFIG_NAME = 'docker'
+
+    HOST = '0.0.0.0'
+
+    # DB settings
+    DB_USER = 'root'
+    DB_PASS = 'root'
+    DB_HOST = '0.0.0.0'
+    DB_PORT = 3306  # MySQL
+    DB_NAME = 'test_db'
+    SQLALCHEMY_DATABASE_URI = f"mysql+pymysql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+
+    LOGSTASH_HOST = '0.0.0.0'
 
 
 class DevelopmentConfig(Config):
     CONFIG_NAME = 'develop'
 
 
-class TestingConfig(Config):
-    CONFIG_NAME = 'testing'
+class ProductionConfig(Config):
+    CONFIG_NAME = 'production'

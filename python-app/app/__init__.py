@@ -56,7 +56,6 @@ app = create_app()
 
 db_engine, session = create_db(app)
 
-
 from app import views, models
 
 logging.warning(f'Running app with *{project_config.CONFIG_NAME}* config')
